@@ -6,7 +6,7 @@
 /*   By: kawaharadaryou <kawaharadaryou@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/13 17:44:11 by kawaharadar       #+#    #+#             */
-/*   Updated: 2024/12/13 17:47:43 by kawaharadar      ###   ########.fr       */
+/*   Updated: 2024/12/17 16:50:54 by kawaharadar      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,5 @@ int main(int ac, char **av)
 		std::cerr << "write a literal" << std::endl;
 		return 1;
 	}
-	Converter converter(av[1]);
-	converter.convert();
+	Converter::convert(std::string(av[1]));
 }
