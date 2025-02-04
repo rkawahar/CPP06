@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Converter.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kawaharadaryou <kawaharadaryou@student.    +#+  +:+       +#+        */
+/*   By: rkawahar <rkawahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 09:40:51 by kawaharadar       #+#    #+#             */
-/*   Updated: 2024/12/17 21:27:16 by kawaharadar      ###   ########.fr       */
+/*   Updated: 2025/02/04 16:47:06 by rkawahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -204,7 +204,7 @@ static void convert_float(std::string literal)
 		std::cout << "double: 0.0" << std::endl;
 		return ;
 	}
-	if (static_cast<float>(ans) > std::numeric_limits<float>::max() || static_cast<float>(ans) < std::numeric_limits<float>::lowest())
+	if (static_cast<float>(ans) > std::numeric_limits<float>::max() || static_cast<float>(ans) < -std::numeric_limits<float>::max())
 		std::cout << "float: overflow" << std::endl;
 	else
 	{
@@ -250,7 +250,7 @@ static void convert_double(std::string literal)
 		std::cout << "double: 0.0" << std::endl;
 		return ;
 	}
-	if (static_cast<float>(ans) > std::numeric_limits<float>::max() || static_cast<float>(ans) < std::numeric_limits<float>::lowest())
+	if (static_cast<float>(ans) > std::numeric_limits<float>::max() || static_cast<float>(ans) < -std::numeric_limits<float>::max())
 		std::cout << "float: overflow" << std::endl;
 	else
 	{
