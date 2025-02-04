@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Serializer.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kawaharadaryou <kawaharadaryou@student.    +#+  +:+       +#+        */
+/*   By: rkawahar <rkawahar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 22:13:28 by kawaharadar       #+#    #+#             */
-/*   Updated: 2024/12/17 22:19:54 by kawaharadar      ###   ########.fr       */
+/*   Updated: 2025/02/04 16:50:01 by rkawahar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
 #include <fstream>
+#include <stdint.h>
 #include "Data.hpp"
 
 class Serializer {
